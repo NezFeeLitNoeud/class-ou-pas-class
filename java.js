@@ -21,7 +21,12 @@ $(".circle").click(function() {
   $(this).toggleClass("full");
 });
 
+
+
 // Instruction niveau 2 
+
+// Les instructions de niveau 2 ne fonctionnent uniquement 
+// lorsque la matrice est entierement pleine ou vide.
 
 // Consigne 1 
 $(".carrer1").click(function(){
@@ -31,26 +36,6 @@ $(".carrer1").click(function(){
 	$(this).toggleClass('full');
 	$('.l1.circle').toggleClass('full');
 });
-
-// if($(".circle").hasClass(".l1")==true){$(".l1").toggleClass("full");}
-
-// else $(".l1").text("Non Il n'existe aucun élément p avec cette classe");
-
-// $(".carrer1").click(function(){
-// 	$('.l1.circle').removeClass('empty');
-// 	$('.l1.circle').addClass('full');
-// 	$(this).hasClass('full');
-// 	$(this).toggleClass('full');
-
-// });
-
-// $(".carrer1").click(function(){
-// 	$(this).hasClass('empty');
-// 	$(this).toggleClass('empty');
-// 	$('.l1.circle').hasClass('full');
-// 	$('.l1.circle').toggleClass('full');
-// });
-
 
 
 $(".carrer2").click(function(){
@@ -88,7 +73,7 @@ $(".carrer4").click(function(){
 	$('.l5.circle').toggleClass('full');
 });
 
-
+// CONSIGNE 2
 $(".losange").click(function(){
 	$(this).toggleClass('empty');
 	$(this).toggleClass('full');
@@ -119,7 +104,7 @@ $(".losange").click(function(){
 	$('.l5:eq(2)').toggleClass('empty');
 });
 
-
+// Mise en page - Test Jquery
 $( "#btn1" )
   .on( "mouseenter", function() {
     $( this ).css({
